@@ -1,0 +1,612 @@
+body{
+	background-image: url(pic2.jpg);
+	background-size: cover;
+}
+
+button {
+	margin-left : 150vh;
+	margin-top : 30vh;
+	size : 20vh;
+	color: white;
+ 	background-color: transparent;
+	font-size: 10vh;
+
+}
+h1 {
+	font-family: 'Ruge Boogie';
+	font-weight: bold;
+	font-size: 10vh;
+	color:white;
+	margin-left: 70vh;
+}
+
+#expresso,#water,#milk,#foam,#milk2,#foam2,#milk3,#cream,#chocolate,#name1,#name2,#name3,#name4,#name5,#name6{
+	opacity: 0;
+}
+
+.back{
+	background-image: url(pic.jpg);
+	background-size: cover;
+}
+
+.heart{
+    position: absolute;
+    width: 100vh;
+    height: 90px;
+    float: left;
+    left:7vh;
+    bottom:7vh;
+    transition:transform 0.1s ease-in-out;
+	animation-name:heart;
+ 			animation-duration: 10s;
+ 			animation-delay:30s;
+ 			animation-timing-function:ease-in-out;
+ 			animation-play-state:running;
+ 			animation-iteration-count:1;
+ 			opacity:0;
+}
+.heart:before,
+.heart:after{
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: #fc2e5a;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+.heart:after{
+    left: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+}
+
+
+.cup{
+	-webkit-border-bottom-right-radius: 3vh;
+	-webkit-border-bottom-left-radius: 3vh;
+	-moz-border-radius-bottom right: 3vh;
+	-moz-border-radius-bottom left: 3vh;
+	border-bottom-right-radius: 7vh;
+	border-bottom-left-radius: 7vh;
+	height: 30vh;
+	background-color: transparent;
+	position: absolute;
+	width: 30vh;
+	left: 80vh;
+	top: 30vh;
+	border: 1.5vh solid white;
+}	
+.handle{
+	position: relative;
+	width: 7vh;
+	height: 15vh;
+	background: transparent;
+	-moz-border-radius: 20vh / 70vh;
+	-webkit-border-radius: 20vh / 70vh;
+	border-radius: 20vh / 70vh;
+	border-top: 1.5vh solid white;
+	border-right: 1.5vh solid white;
+	border-bottom: 1.5vh solid white;
+	left:31vh;
+	top:5vh;
+}
+.expresso
+{
+	position:relative;
+	height: 0vh;
+	width: 30vh;
+	background-color: #881818;
+	border-bottom-right-radius: 7vh;
+	border-bottom-left-radius: 7vh;
+	color:black;
+	text-align: center;
+	right:31vh;
+	top:18.7vh;
+	transition:transform 1s ease-in-out;
+	opacity:0;
+	animation-name:up_down_espresso;
+ 			animation-duration: 6s;
+ 			animation-timing-function:ease-in-out;
+ 			animation-play-state:running;
+ 			animation-iteration-count:5;
+}
+.water
+{
+	position: absolute;
+	height:0vh;
+	width:30vh;
+	background-color:aqua;
+	color:black;
+	text-align:center;
+	left:-31vh;
+	bottom:-3.7vh;
+
+	transition:transform 4s ease-in-out;
+	animation-name:up_down_water;
+ 			animation-duration: 6s;
+ 			animation-delay: 6s;
+ 			animation-timing-function:ease-in-out;
+ 			animation-play-state:running;
+ 			opacity:0;
+}
+
+
+.milk
+{
+	position:absolute;
+	height:0vh;
+	width:30vh;
+	background-color:#e5d6c8;
+	color:black;
+	text-align: center;
+	right:8vh;
+	bottom:-3.7vh;
+	transition:transform 4s ease-in-out;
+	animation-name:up_down_milk;
+ 			animation-duration: 6s;
+ 			animation-delay: 12s;
+ 			animation-timing-function:ease-in-out;
+ 			animation-play-state:running;
+ 			opacity:0;
+ 			animation-iteration-count:1;
+}
+.foam
+{
+	position:absolute;
+	height:0vh;
+	width:30vh;
+	background-color: white;
+	color:black;
+	text-align: center;
+	right:8vh;
+	bottom:12vh;
+	transition:transform 4s ease-in-out;
+	animation-name:up_down_foam;
+ 			animation-duration: 6s;
+ 			animation-delay: 12s;
+ 			animation-timing-function:ease-in-out;
+ 			animation-play-state:running;
+ 			opacity:0;
+ 			animation-iteration-count:1;
+}
+
+/*.capuccino
+{
+	position:absolute;
+	height:0vh;
+	width:30vh;
+	background-color: red;
+	color:black;
+	text-align:center;
+	right:8vh;
+	bottom:8vh;
+
+}*/
+.milk2
+{
+	position:absolute;
+	height:0vh;
+	width:30vh;
+	background-color:#e5d6c8;
+	color:black;
+	text-align: center;
+	right:8vh;
+	bottom:-3.7vh;
+	transition:transform 4s ease-in-out;
+	animation-name:up_down_milk2;
+ 			animation-duration: 6s;
+ 			animation-delay: 18s;
+ 			animation-timing-function:ease-in-out;
+ 			animation-play-state:running;
+ 			opacity:0;
+ 			animation-iteration-count:1;
+}
+.foam2
+{
+	position:absolute;
+	height:0vh;
+	width:30vh;
+	background-color:white;
+	color:black;
+	text-align:center;
+	right:8vh;
+	bottom:8vh;
+	transition:transform 4s ease-in-out;
+	animation-name:up_down_foam2;
+ 			animation-duration: 6s;
+ 			animation-delay: 18s;
+ 			animation-timing-function:ease-in-out;
+ 			animation-play-state:running;
+ 			opacity:0;
+ 			animation-iteration-count:1;
+
+
+}
+.chocolate
+{
+	position:absolute;
+	height:6vh;
+	width:30vh;
+	background-color: #470000;
+	color:#e5d6c8;
+	text-align: center;
+	right:8vh;
+	bottom:-3.7vh;
+	transition:transform 4s ease-in-out;
+	animation-name:up_down_chocolate;
+ 			animation-duration: 6s;
+ 			animation-delay: 24s;
+ 			animation-timing-function:ease-in-out;
+ 			animation-play-state:running;
+ 			opacity:0;
+ 			animation-iteration-count:1;
+}
+.milk3
+{
+	position:absolute;
+	height:12vh;
+	width:30vh;
+	background-color:#e5d6c8;
+	color:black;
+	text-align: center;
+	right:8vh;
+	bottom:2.2vh;
+	transition:transform 4s ease-in-out;
+	animation-name:up_down_milk3;
+ 			animation-duration: 6s;
+ 			animation-delay: 24s;
+ 			animation-timing-function:ease-in-out;
+ 			animation-play-state:running;
+ 			opacity:0;
+ 			animation-iteration-count:1;
+}
+.cream{
+	position:absolute;
+	height:8vh;
+	width:30vh;
+	background-color: white;
+	color:black;
+	text-align: center;
+	right:8vh;
+	bottom:14.2vh;
+	transition:transform 4s ease-in-out;
+	animation-name:up_down_cream;
+ 			animation-duration: 6s;
+ 			animation-delay: 24s;
+ 			animation-timing-function:ease-in-out;
+ 			animation-play-state:running;
+ 			opacity:0;
+ 			animation-iteration-count:1;
+}
+.name1
+{
+	font-family: 'Ruge Boogie';
+
+	position:absolute;
+	margin-top: 15vh;
+	margin-left: 1vh;
+	color:white;
+	font-size: 5vh;
+	transition:transform 0.2s ease-in-out;
+	animation-name:name1;
+ 			animation-duration: 6s;
+ 			animation-delay: 0s;
+ 			animation-timing-function:ease-in-out;
+ 			animation-play-state:running;
+ 			opacity:0;
+ 			animation-iteration-count:1;
+}
+.name2
+{
+	font-family: 'Ruge Boogie';
+
+	position:absolute;
+	margin-top: 15vh;
+	margin-left: 1vh;
+	color:white;
+	font-size: 5vh;
+	transition:transform 0.2s ease-in-out;
+	animation-name:name2;
+ 			animation-duration: 6s;
+ 			animation-delay: 6s;
+ 			animation-timing-function:ease-in-out;
+ 			animation-play-state:running;
+ 			opacity:0;
+ 			animation-iteration-count:1;
+}
+.name3
+{
+	font-family: 'Ruge Boogie';
+
+position:absolute;
+	margin-top: 15vh;
+	margin-left: 1vh;
+	color:white;
+	font-size: 5vh;
+	transition:transform 0.2s ease-in-out;
+	animation-name:name3;
+ 			animation-duration: 6s;
+ 			animation-delay: 12s;
+ 			animation-timing-function:ease-in-out;
+ 			animation-play-state:running;
+ 			opacity:0;
+ 			animation-iteration-count:1;	
+}
+.name4
+{
+	font-family: 'Ruge Boogie';
+
+position:absolute;
+	margin-top: 15vh;
+	margin-left: 1vh;
+	color:white;
+	font-size: 5vh;
+	transition:transform 0.2s ease-in-out;
+	animation-name:name4;
+ 			animation-duration: 6s;
+ 			animation-delay: 18s;
+ 			animation-timing-function:ease-in-out;
+ 			animation-play-state:running;
+ 			opacity:0;
+ 			animation-iteration-count:1;	
+}
+.name5
+{
+	font-family: 'Ruge Boogie';
+
+	position:absolute;
+	margin-top: 15vh;
+	margin-left: 1vh;
+	color:white;
+	font-size: 5vh;
+	transition:transform 0.2s ease-in-out;
+	animation-name:name5;
+ 			animation-duration: 6s;
+ 			animation-delay: 24s;
+ 			animation-timing-function:ease-in-out;
+ 			animation-play-state:running;
+ 			opacity:0;
+ 			animation-iteration-count:1;
+}
+.name6
+{
+	font-family: 'Ruge Boogie';
+
+	position:absolute;
+	margin-top: 15vh;
+	margin-left: 1vh;
+	color:white;
+	font-size: 3vh;
+	transition:transform 0.2s ease-in-out;
+	animation-name:name6;
+ 			animation-duration: 10s;
+ 			animation-delay: 30s;
+ 			animation-timing-function:ease-in-out;
+ 			animation-play-state:running;
+ 			opacity:0;
+ 			animation-iteration-count:1;
+}
+
+@keyframes name1
+{
+	0%
+	{
+		opacity:0;
+	}
+	100%
+	{
+		opacity:1;
+	}
+}
+@keyframes name2
+{
+	0%
+	{
+		opacity:0;
+	}
+	100%
+	{
+		opacity:1;
+	}
+}
+
+@keyframes name3
+{
+	0%
+	{
+		opacity:0;
+	}
+	100%
+	{
+		opacity:1;
+	}
+}
+@keyframes name4
+{
+	0%
+	{
+		opacity:0;
+	}
+	100%
+	{
+		opacity:1;
+	}
+}
+@keyframes name5
+{
+	0%
+	{
+		opacity:0;
+	}
+	100%
+	{
+		opacity:1;
+	}
+}
+@keyframes name6
+{
+	0%
+	{
+		opacity:0;
+	}
+	100%
+	{
+		opacity:1;
+	}
+}
+@keyframes up_down_espresso
+{
+		0%
+		{
+			height:0vh;
+			opacity:0;
+		}
+
+		100%
+		{
+			height:5vh;
+			opacity:1;
+		}
+}
+@keyframes up_down_water
+{
+
+		0%
+		{
+			height:0vh;
+			opacity:0;
+
+		}
+		100%
+		{
+			height:25vh;
+			opacity:1;
+		}
+}
+@keyframes up_down_milk
+{
+
+		0%
+		{
+			height:0vh;
+			opacity:0;
+
+		}
+		100%
+		{
+			height:16vh;
+			opacity:1;
+		}
+}
+@keyframes up_down_foam
+{
+
+	0%
+	{
+		height:0vh;
+		opacity:0;
+	}
+
+	100%
+	{
+		height:10vh;
+		opacity:1;
+	}
+}
+@keyframes up_down_milk2
+{
+	0%
+	{
+		height:0vh;
+		opacity:0;
+	}
+	100%
+	{
+		height:12vh;
+		opacity:1;
+	}
+}
+@keyframes up_down_foam2
+{
+	0%
+	{
+		height:0vh;
+		opacity:0;
+	}
+	100%
+	{
+		height:14vh;
+		opacity:1;
+	}
+}
+@keyframes up_down_chocolate
+{
+	0%
+	{
+		height:0vh;
+		opacity:0;
+	}
+	100%
+	{
+		height: 6vh;
+		opacity:1;
+	}
+}
+@keyframes up_down_milk3
+{
+	0%
+	{
+		height:0vh;
+		opacity:0;
+	}
+	100%
+	{
+		height:12vh;
+		opacity:1;
+	}
+}
+@keyframes up_down_cream
+{
+	0%
+	{
+		height:0vh;
+		opacity:0;
+	}
+	100%
+	{
+		height:8vh;
+		opacity:1;
+	}
+}
+@keyframes heart
+{
+	0%
+	{
+		opacity:0;
+	}
+	100%
+	{
+		opacity:1;
+	}
+}

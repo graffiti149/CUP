@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		</title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="cup.css">
+<link href="https://fonts.googleapis.com/css?family=Ruge+Boogie&display=swap" rel="stylesheet">
+
+<body>
+
+	<h1>
+		CAFE MOCHA
+	</h1>
+
+	<button onclick="change_text()">CLICK ME!!</button>
+
+<div class="cup">
+	<div class="handle">
+		<div id="expresso">
+			ESPRESSO
+		</div>
+		<div id="water">
+			HOT WATER
+		</div>
+		<div id="milk">
+			STEAMED MILK
+		</div>
+		<div id="foam">
+			FOAM
+		</div>
+		
+		<div id="milk2">
+			STEAMED MILK
+		</div>
+		<div id="foam2">
+			FOAM
+		</div>
+		<div id="chocolate">
+			CHOCOLATE
+			
+		</div>
+		<div id="milk3">
+			STEAMED MILK
+		</div>
+		<div id="cream">
+			WHIPPED CREAM
+		</div>
+	</div>
+	<div id="heart">
+		
+	</div>
+	<div id="name1">
+		ESPRESSO
+	</div>
+	<div id="name2">
+		AMERICANO
+		
+	</div>
+	<div id="name3">
+		LATTE
+	</div>
+	<div id="name4">
+		CAPPUCCINO
+	</div>
+	<div id="name5">
+		MOCHA
+	</div>
+	<div id="name6">
+		HOPE YOU ENJOYED YOUR COFFEE!!
+	</div>
+</div>
+
+<script type="text/javascript">
+function change_text () {
+	document.querySelector("button").innerHTML = "ENJOY !!";
+}
+	var body = document.querySelector("body");
+	var expresso = document.querySelector("#expresso");
+	var water = document.querySelector("#water");
+	var milk = document.querySelector("#milk");
+	var foam = document.querySelector("#foam");
+	var milk2 = document.querySelector("#milk2");
+	var foam2 = document.querySelector("#foam2");
+	var chocolate = document.querySelector("#chocolate");
+	var milk3 = document.querySelector("#milk3");
+	var cream = document.querySelector("#cream");
+	var heart = document.querySelector("#heart");
+	var name1 = document.querySelector("#name1");
+	var name2 = document.querySelector("#name2");
+	var name3 = document.querySelector("#name3");
+	var name4 = document.querySelector("#name4");
+	var name5 = document.querySelector("#name5");
+	var name6 = document.querySelector("#name6");
+
+	document.querySelector("button").addEventListener("click", function(){
+		body.classList.add("back");
+		expresso.classList.add("expresso");
+		water.classList.add("water");
+		milk.classList.add("milk");
+		foam.classList.add("foam");
+		milk2.classList.add("milk2");
+		foam2.classList.add("foam2");
+		chocolate.classList.add("chocolate");
+		milk3.classList.add("milk3");
+		cream.classList.add("cream");
+		heart.classList.add("heart");
+		name1.classList.add("name1");
+		name2.classList.add("name2");
+		name3.classList.add("name3");
+		name4.classList.add("name4");
+		name5.classList.add("name5");
+		name6.classList.add("name6");
+
+	})
+</script>
+
+</body>
+</html>
